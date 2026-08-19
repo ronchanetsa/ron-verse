@@ -47,3 +47,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.featuregrid h2 {
+  font-size: clamp(52px, 5vw, 76px);
+  line-height: 0.95;
+}
