@@ -21,3 +21,29 @@
     line-height:1.08;
   }
 }
+
+
+/* Ron-Verse responsive safeguard */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.featuregrid > * {
+  min-width: 0;
+}
+
+.featuregrid h2 {
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 900px) {
+  .featuregrid {
+    grid-template-columns: 1fr;
+  }
+}
