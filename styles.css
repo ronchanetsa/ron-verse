@@ -139,3 +139,127 @@ body {
     font-size: 16px;
   }
 }
+
+/* Inheritance of Shadows - Question Section */
+
+.inheritance-question {
+  background: #faf8f3;
+  color: #111;
+  padding: 120px 0 140px;
+}
+
+.inheritance-question-wrap {
+  width: min(1100px, 88%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 90px;
+  align-items: start;
+}
+
+.inheritance-question-heading {
+  position: sticky;
+  top: 120px;
+}
+
+.inheritance-question-heading .eyebrow {
+  color: #c49a44;
+  font-size: 11px;
+  letter-spacing: .22em;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.inheritance-question-heading h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 5vw, 76px);
+  line-height: .98;
+  font-weight: 400;
+  letter-spacing: -.035em;
+  margin: 0;
+}
+
+.inheritance-question-heading h2 span {
+  display: block;
+  color: #c49a44;
+  font-style: italic;
+}
+
+.inheritance-question-copy {
+  max-width: 720px;
+}
+
+.inheritance-question-copy p {
+  font-size: 19px;
+  line-height: 1.7;
+  color: #474747;
+  margin: 0 0 28px;
+}
+
+.inheritance-question-copy strong {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #111;
+  font-size: 22px;
+}
+
+.inheritance-themes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin-top: 70px;
+  background: #d8d1c4;
+}
+
+.inheritance-themes article {
+  background: #faf8f3;
+  padding: 32px 28px 36px;
+}
+
+.inheritance-themes article span {
+  display: block;
+  color: #c49a44;
+  font-size: 11px;
+  letter-spacing: .2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.inheritance-themes h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 0 14px;
+}
+
+.inheritance-themes p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+
+  .inheritance-question {
+    padding: 80px 0 100px;
+  }
+
+  .inheritance-question-wrap {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .inheritance-question-heading {
+    position: static;
+  }
+
+  .inheritance-question-heading h2 {
+    font-size: clamp(42px, 13vw, 68px);
+  }
+
+  .inheritance-themes {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+
+}
