@@ -207,7 +207,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  margin-top: 70px;
+  margin-top: 0px;
   background: #d8d1c4;
 }
 
