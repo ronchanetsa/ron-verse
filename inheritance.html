@@ -58,3 +58,91 @@
 
 </body>
 </html>
+/* Inheritance of Shadows */
+
+.inheritance-hero {
+  min-height: calc(100vh - 80px);
+  background:
+    radial-gradient(circle at 72% 30%, rgba(196,154,68,.22), transparent 28%),
+    linear-gradient(120deg, #090909 0%, #111111 55%, #181818 100%);
+  color: #faf8f3;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.inheritance-hero::before {
+  content: "";
+  position: absolute;
+  width: 55vw;
+  height: 75vh;
+  right: -10vw;
+  top: 10%;
+  background: radial-gradient(circle, rgba(196,154,68,.18), transparent 65%);
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.inheritance-hero-copy {
+  width: min(1100px, 88%);
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  padding: 100px 0;
+}
+
+.inheritance-hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(64px, 9vw, 138px);
+  line-height: .86;
+  letter-spacing: -.045em;
+  max-width: 950px;
+  margin: 22px 0 42px;
+}
+
+.inheritance-hero h1 span {
+  display: block;
+  color: #c49a44;
+  font-style: italic;
+}
+
+.inheritance-hero .eyebrow {
+  color: #c49a44;
+  font-size: 11px;
+  letter-spacing: .22em;
+  font-weight: 700;
+}
+
+.inheritance-tagline {
+  max-width: 720px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(25px, 3vw, 42px);
+  line-height: 1.15;
+  margin: 0 0 28px;
+}
+
+.inheritance-intro {
+  max-width: 650px;
+  color: #b8b5af;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+@media (max-width: 700px) {
+  .inheritance-hero-copy {
+    padding: 70px 0;
+  }
+
+  .inheritance-hero h1 {
+    font-size: clamp(56px, 16vw, 90px);
+  }
+
+  .inheritance-tagline {
+    font-size: 26px;
+  }
+
+  .inheritance-intro {
+    font-size: 16px;
+  }
+}
