@@ -382,3 +382,48 @@ body {
   min-width: 0 !important;
   max-width: 570px !important;
 }
+/* ABOUT SECTION - FINAL LAYOUT */
+#about .split {
+  display: grid !important;
+  grid-template-columns: minmax(0, 520px) minmax(0, 1fr) !important;
+  gap: 80px !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+#about .artist-portrait {
+  width: 100% !important;
+  max-width: 520px !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+}
+
+#about .artist-portrait img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 520px !important;
+  height: auto !important;
+  margin: 0 !important;
+}
+
+#about .aboutcopy {
+  width: 100% !important;
+  max-width: 570px !important;
+  min-width: 0 !important;
+}
+
+@media (max-width: 900px) {
+  #about .split {
+    grid-template-columns: 1fr !important;
+    gap: 45px !important;
+  }
+
+  #about .artist-portrait {
+    max-width: 520px !important;
+    margin: 0 auto !important;
+  }
+
+  #about .aboutcopy {
+    max-width: 100% !important;
+  }
+}
