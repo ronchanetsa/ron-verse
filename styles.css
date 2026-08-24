@@ -340,3 +340,39 @@ body {
   height: auto;
   margin: 0 auto;
 }
+/* FINAL ARTIST PORTRAIT GRID FIX */
+
+.split {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  gap: 70px;
+  width: 100%;
+}
+
+.split > * {
+  min-width: 0 !important;
+  max-width: 100%;
+}
+
+.artist-portrait {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  overflow: hidden;
+}
+
+.artist-portrait img {
+  display: block;
+  width: 100% !important;
+  max-width: 520px !important;
+  height: auto;
+  margin: 0 auto;
+}
+
+.aboutcopy {
+  min-width: 0 !important;
+  max-width: 100%;
+}
