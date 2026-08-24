@@ -285,3 +285,16 @@ body {
 .cover.inheritance small {
   display: none;
 }
+.artist-portrait{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.artist-portrait img{
+  width:100%;
+  max-width:520px;
+  height:auto;
+  display:block;
+  object-fit:cover;
+}
