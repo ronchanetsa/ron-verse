@@ -383,12 +383,15 @@ body {
   max-width: 570px !important;
 }
 /* ABOUT SECTION - FINAL LAYOUT */
+
 #about .split {
   display: grid !important;
   grid-template-columns: minmax(0, 520px) minmax(0, 1fr) !important;
-  gap: 80px !important;
+  gap: 64px !important;
   align-items: center !important;
   width: 100% !important;
+  max-width: 1180px !important;
+  margin: 0 auto !important;
 }
 
 #about .artist-portrait {
@@ -404,23 +407,35 @@ body {
   max-width: 520px !important;
   height: auto !important;
   margin: 0 !important;
+  object-fit: cover !important;
 }
 
 #about .aboutcopy {
   width: 100% !important;
-  max-width: 570px !important;
+  max-width: 520px !important;
   min-width: 0 !important;
+}
+
+#about .aboutcopy h2 {
+  max-width: 520px !important;
+}
+
+#about .aboutcopy p {
+  max-width: 520px !important;
 }
 
 @media (max-width: 900px) {
   #about .split {
     grid-template-columns: 1fr !important;
-    gap: 45px !important;
+    gap: 40px !important;
   }
 
   #about .artist-portrait {
-    max-width: 520px !important;
-    margin: 0 auto !important;
+    max-width: 100% !important;
+  }
+
+  #about .artist-portrait img {
+    max-width: 100% !important;
   }
 
   #about .aboutcopy {
