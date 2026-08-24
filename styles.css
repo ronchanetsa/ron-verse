@@ -318,71 +318,18 @@ body {
   object-fit: cover;
 }
 
-.split > * {
-  min-width: 0;
-}
-/* Artist portrait: hard containment */
-.split {
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-}
-
-.artist-portrait {
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-  overflow: hidden;
-}
-
-.artist-portrait img {
-  display: block;
-  width: 100%;
-  max-width: 520px;
-  height: auto;
-  margin: 0 auto;
-}
-/* FINAL ARTIST PORTRAIT GRID FIX */
-
-.split {
+/* ABOUT ARTIST LAYOUT */
+#about .split {
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
-  gap: 70px;
-  width: 100%;
-}
-
-.split > * {
-  min-width: 0 !important;
-  max-width: 100%;
-}
-
-.artist-portrait {
-  display: flex;
+  gap: 70px !important;
   align-items: center;
-  justify-content: center;
-  width: 100% !important;
-  max-width: 100% !important;
-  min-width: 0 !important;
-  overflow: hidden;
 }
 
-.artist-portrait img {
-  display: block;
-  width: 100% !important;
-  max-width: 520px !important;
-  height: auto;
-  margin: 0 auto;
-}
-
-.aboutcopy {
-  min-width: 0 !important;
-  max-width: 100%;
-}
-/* Ron artist portrait - final sizing */
 #about .artist-portrait {
   width: 100% !important;
   min-width: 0 !important;
-  max-width: 520px !important;
-  margin: 0 auto !important;
-  overflow: hidden;
+  max-width: 100% !important;
 }
 
 #about .artist-portrait img {
@@ -391,5 +338,16 @@ body {
   max-width: 520px !important;
   height: auto !important;
   margin: 0 auto !important;
-  object-fit: cover;
+}
+
+#about .aboutcopy {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 570px !important;
+}
+
+@media (max-width: 900px) {
+  #about .split {
+    grid-template-columns: 1fr !important;
+  }
 }
