@@ -376,3 +376,20 @@ body {
   min-width: 0 !important;
   max-width: 100%;
 }
+/* Ron artist portrait - final sizing */
+#about .artist-portrait {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 520px !important;
+  margin: 0 auto !important;
+  overflow: hidden;
+}
+
+#about .artist-portrait img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 520px !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  object-fit: cover;
+}
