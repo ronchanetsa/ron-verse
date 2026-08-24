@@ -303,11 +303,21 @@ body {
   align-items:center;
   justify-content:center;
 }
-
+.artist-portrait {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  width: 100%;
+}
 .artist-portrait img {
-  width:100%;
-  max-width:520px;
-  height:auto;
-  display:block;
-  object-fit:cover;
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  object-fit: cover;
+}
+
+.split > * {
+  min-width: 0;
 }
