@@ -351,3 +351,34 @@ body {
     grid-template-columns: 1fr !important;
   }
 }
+/* FINAL ABOUT LAYOUT */
+#about .split {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  gap: clamp(40px, 6vw, 90px) !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+#about .artist-portrait {
+  width: 100% !important;
+  max-width: 520px !important;
+  min-width: 0 !important;
+  margin: 0 auto !important;
+  overflow: hidden !important;
+}
+
+#about .artist-portrait img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 520px !important;
+  height: auto !important;
+  margin: 0 auto !important;
+}
+
+#about .aboutcopy {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 570px !important;
+}
