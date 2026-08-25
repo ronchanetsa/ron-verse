@@ -506,3 +506,35 @@ body {
     margin: 0 auto;
   }
 }
+/* FINAL DESKTOP ABOUT LAYOUT */
+
+@media (min-width: 901px) {
+  #about .about-layout {
+    display: grid !important;
+    grid-template-columns: 520px minmax(320px, 1fr) !important;
+    gap: 64px !important;
+    align-items: center !important;
+    width: min(1180px, calc(100% - 60px)) !important;
+    margin: 0 auto !important;
+  }
+
+  #about .artist-portrait {
+    width: 520px !important;
+    max-width: 520px !important;
+    margin: 0 !important;
+  }
+
+  #about .artist-portrait img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 520px !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+
+  #about .aboutcopy {
+    width: 100% !important;
+    max-width: 520px !important;
+    margin: 0 !important;
+  }
+}
