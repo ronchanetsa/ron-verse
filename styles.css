@@ -445,3 +445,64 @@ body {
   }
 
 }
+/* FINAL ABOUT PORTRAIT POSITIONING */
+
+#about .about-layout {
+  width: min(1180px, calc(100% - 80px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 520px minmax(0, 1fr);
+  gap: 80px;
+  align-items: center;
+}
+
+#about .artist-portrait {
+  width: 520px;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#about .artist-portrait img {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}
+
+#about .aboutcopy {
+  width: 100%;
+  max-width: 520px;
+  min-width: 0;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  #about .about-layout {
+    width: min(100% - 40px, 620px);
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  #about .artist-portrait {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  #about .artist-portrait img {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  #about .aboutcopy {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
