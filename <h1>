@@ -31,16 +31,13 @@
 
   <main>
 
-    <section class="inheritance-hero">
-      <img class="inheritance-hero-visual" src="assets/inheritance_of_shadows_cinematic_loop2.png" alt="Inheritance of Shadows cinematic artwork">
-      <div class="inheritance-hero-copy">
+    <section class="-hero">
+      <img class="-hero-visual" src="assets/_of_shadows_cinematic_loop2.png" alt=" of Shadows cinematic artwork">
+      <div class="-hero-copy">
 
         <p class="eyebrow">THE RON-VERSE · BORDERLESS JUSTICE</p>
 
-        <h1>
-          Inheritance
-          <span>of Shadows.</span>
-        </h1>
+        <!-- Book title is already part of the hero artwork -->
 
         <p class="inheritance-tagline">
           Some inherit wealth. Some inherit names.
